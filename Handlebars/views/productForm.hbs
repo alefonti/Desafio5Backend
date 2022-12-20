@@ -1,0 +1,64 @@
+<form action="/api/productos" name="product_form" onsubmit="return validateForm()" method="POST">
+    <div class="m-4">
+
+        <div class="container text-left">
+
+
+            <div class="row">
+                <div class="col-12">
+                    <h1 style="color:blue">Ingrese Producto</h1>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+                <div class="col-12">
+                    <label for="title" class="form-label">Nombre</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                <input type="text" class="form-control" name="title" id="title" />
+                </div>
+            
+            </div>
+
+
+            <div class="row">
+                <div class="col-12">
+                        <label for="price" class="form-label">Precio</label> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <input type="number" class="form-control"  name="price" id="price" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <label for="thumbnail" class="form-label">Foto Url</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <input type="text" class="form-control" name="thumbnail" id="thumbnail" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <br/>
+                    <button type="submit" class="btn btn-success">Enviar</button>
+                    <a href="/productos" class="btn btn-success " role="button" aria-pressed="true">Volver</a>
+                </div> 
+            </div>
+
+
+        </div>
+
+        <br/>
+    </div>
+</form>

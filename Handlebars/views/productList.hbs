@@ -1,0 +1,37 @@
+<br/>
+
+<a href="/alta-producto" class="btn btn-success" style="float: right;" role="button" aria-pressed="true">Alta producto</a>
+
+<br/>
+
+<h1 style="color:blue">Vista de productos</h1>
+
+<br/>
+
+{{#if products.length}}
+
+    <table class="table" style="background-color:DimGray;padding:20px;color:white">
+        <thead>
+            <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Foto</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each products}}
+                <tr>
+                    <td>{{this.title}}</td>
+                    <td>{{this.price}}</td>
+                    <td><img src="{{this.thumbnail}}" style="width: 80px" /></td>
+                </tr>
+            {{/each}}
+
+        </tbody>
+    </table>
+  
+{{else}}
+   
+
+      <div style="background-color:LightYellow;padding:20px;color:black"><h2>No se encontraron productos</h2></div>
+{{/if}}
